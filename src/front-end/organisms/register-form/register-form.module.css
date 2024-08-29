@@ -1,0 +1,26 @@
+.containerForm {
+    position: relative;
+    width: 706px;
+    height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+
+.containerForm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 24px;
+    z-index: 2;
+}
+
+.title {
+    color: black;
+    z-index: 0;
+    position: relative;
+}
