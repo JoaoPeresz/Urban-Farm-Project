@@ -1,4 +1,4 @@
----------------------------------//  Agrocidade  //---------------------------------  
+#---------------------------------//  Agrocidade  //---------------------------------  
 
 ## Descrição do Projeto
 Agrocidade é um projeto desenvolvido por um grupo de estudantes universitários com o objetivo de integrar práticas agrícolas sustentáveis em ambientes urbanos. O projeto visa criar soluções tecnológicas que promovam a agricultura urbana, incentivando a produção local de alimentos e a sustentabilidade nas cidades.
@@ -17,9 +17,8 @@ Agrocidade é um projeto desenvolvido por um grupo de estudantes universitários
 
 ## Tecnologias Utilizadas
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js, Express
-- **Banco de Dados**: MongoDB
-- **Outros**: Arduino, Raspberry Pi
+- **Backend**: Python
+- **Banco de Dados**: Microsoft SQL Server
 
 ## Estrutura do Projeto
 - **/docs**: Documentação do projeto
