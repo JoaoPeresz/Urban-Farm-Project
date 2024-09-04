@@ -1,0 +1,23 @@
+.containerButton {
+    border: 2px solid #334B35;
+    border-radius: 8px;
+    padding: 0 20px;
+    height: 60px;
+    margin-right: 40px;
+    color: #334B35;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.containerButton:hover {
+    border: 2px solid #2aa439;
+    color: #2aa439;
+    transition: 1s;
+    border-radius: 18px;
+}
