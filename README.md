@@ -1,4 +1,4 @@
-# "---------------------------------//"  Agrocidade  "//---------------------------------"  
+<h1 align="center">🌱 Agrocidade 🌱</h1>
 
 ## Descrição do Projeto
 Agrocidade é um projeto desenvolvido por um grupo de estudantes universitários com o objetivo de integrar práticas agrícolas sustentáveis em ambientes urbanos. O projeto visa criar soluções tecnológicas que promovam a agricultura urbana, incentivando a produção local de alimentos e a sustentabilidade nas cidades.
@@ -14,6 +14,7 @@ Agrocidade é um projeto desenvolvido por um grupo de estudantes universitários
 - **Automatização de Irrigação**: Sistema automatizado de irrigação com base em sensores e dados meteorológicos.
 - **Plataforma Educacional**: Seção dedicada a ensinar práticas de agricultura urbana para iniciantes.
 - **Comunidade Online**: Espaço para que usuários compartilhem experiências, dicas e soluções.
+- **Loja Virtual**: Para compras de frutas e vegetais frescos de alta qualidade.
 
 ## Tecnologias Utilizadas
 - **Frontend**: HTML, CSS, JavaScript
