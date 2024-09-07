@@ -1,5 +1,6 @@
 .containerForm {
     width: 706px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;

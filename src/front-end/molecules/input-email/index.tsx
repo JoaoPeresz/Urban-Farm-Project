@@ -1,36 +1,19 @@
-"use client";
-
 import { Fragment, useState, ChangeEvent } from "react";
 import styles from "./input-email.module.css";
 import TextField from "@/src/front-end/atoms/text-field";
 
-class EmailInputManager {
-    email: string;
-
-    constructor() {
-        this.email = "";
-    }
-
-    setEmail(value: string) {
-        this.email = value;
-    }
-
-    getEmail() {
-        return this.email;
-    }
-}
-
 type Props = {
-    onEmailChange: (newEmail: string) => void;
+    onEmailChange: any;
 }
 
 export default function InputEmail({onEmailChange}:Props) {
-    const [emailInputManager] = useState(new EmailInputManager());
+
+    const [userEmail, setUserEmail] = useState<string>("")
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const newEmail = e.currentTarget.value;
-        emailInputManager.setEmail(newEmail)
-        onEmailChange(newEmail)
+        const email = e.target.value;
+        setUserEmail(email)
+        onEmailChange(email)
     };
 
     return (
@@ -40,6 +23,7 @@ export default function InputEmail({onEmailChange}:Props) {
                 <input
                     className={styles.containerInput}
                     type="email"
+                    value={userEmail}
                     onChange={handleInputChange}
                 />
             </div>

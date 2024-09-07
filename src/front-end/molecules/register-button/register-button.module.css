@@ -20,4 +20,7 @@
     color: #2aa439;
     transition: 1s;
     border-radius: 18px;
+    box-shadow: 0px 0px 37px -5px rgba(42,164,57,0.82);
+    -webkit-box-shadow: 0px 0px 37px -5px rgba(42,164,57,0.82);
+    -moz-box-shadow: 0px 0px 37px -5px rgba(42,164,57,0.82);
 }
