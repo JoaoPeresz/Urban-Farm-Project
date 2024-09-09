@@ -1,6 +1,6 @@
 "use client";
 
-import {Fragment, useState} from "react";
+import {Fragment, useEffect, useState} from "react";
 import styles from "./register-form.module.css";
 import Image from "next/image";
 import title from "../../../../public/assets/title.urban.farm.png"
@@ -11,12 +11,32 @@ import TextField from "../../atoms/text-field";
 
 export default function RegisterForm() {
 
-    const [userEmail, setuserEmail] = useState("")
+    const [userEmail, setuserEmail] = useState<string>("")
+    const [password, setpassword] = useState<string>("")
+    const [passwordConfirm, setpasswordConfirm] = useState<string>()
+    const [isSamePassword, setIsSamePassword] = useState<boolean>(false)
 
     const handlerEmailChange = (newEmail : string) => {
         setuserEmail(newEmail);
-        console.log("email renderizado no pai:", userEmail);
     }
+
+    const handlerPasswordChange = (userPassword : string) => {
+        setpassword(userPassword);
+    }
+
+    const confirmingPassword = (userPassword : string) => {
+        setpasswordConfirm(userPassword)
+    }
+
+    useEffect(() => {
+        if (passwordConfirm === password) {
+            setIsSamePassword(true)
+            console.log(isSamePassword)
+        } else {
+            setIsSamePassword(false)
+            console.log(isSamePassword)
+        }
+    }, [password, passwordConfirm]);
 
     return (
         <Fragment>
@@ -26,12 +46,8 @@ export default function RegisterForm() {
                     </div>
                     <div className={styles.containerInput}>
                         <InputEmail onEmailChange={handlerEmailChange}/>
-                        <InputPassword typeInputPassword={"password"}/>
-                        <div className={styles.containerForgotPassword}>
-                            <div className={styles.ForgotPassword}>
-                                <TextField label={"Esqueceu a senha?"}/>
-                            </div>
-                        </div>
+                        <InputPassword onPasswordChange={handlerPasswordChange}/>
+                        <InputPassword onPasswordChange={confirmingPassword}/>
                     </div>
                 <ButtonSigIn/>
             </div>

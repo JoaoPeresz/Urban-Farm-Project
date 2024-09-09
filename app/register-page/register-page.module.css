@@ -1,13 +1,13 @@
-.containerHome {
+.containerRegister {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../../../../public/assets/Rectangle 5.png");
+    background-image: url("../../public/assets/Rectangle 5.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
-
 }
