@@ -1,20 +1,14 @@
-"use client"
-
 import {Fragment} from "react";
 import styles from "./header-home.module.css"
 import LogoAgroCidade from "@/src/front-end/atoms/logo-agro-cidade";
-import RegisterButton from "@/src/front-end/molecules/register-button";
+import SearchField from "@/src/front-end/molecules/search-field";
 
-type Props = {
-    createAccount : () => void
-}
-
-export default function HeaderHome ({createAccount} : Props) {
+export default function HeaderHome () {
     return (
         <Fragment>
-            <div className={styles.containerHeaderHome}>
+            <div className={styles.containerHeader}>
                 <LogoAgroCidade/>
-                <RegisterButton createAccount={createAccount}/>
+                <SearchField/>
             </div>
         </Fragment>
     )

@@ -1,13 +1,13 @@
 "use client"
 
 import {Fragment} from "react";
-import LoginHome from "../../src/front-end/templates/login-home";
+import Login from "../../src/front-end/templates/login";
 
 export default function LoginPage () {
 
     return (
         <Fragment>
-                <LoginHome/>
+                <Login/>
         </Fragment>
     )
 }

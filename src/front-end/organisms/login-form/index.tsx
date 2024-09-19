@@ -27,8 +27,8 @@ export default function LoginForm ({handlerEmailChange, handlerPasswordChange} :
                                 <TextField label={"Esqueceu a senha?"}/>
                             </div>
                         </div>
-                    </div>
                     <ButtonSigIn/>
+                    </div>
                 </div>
         </Fragment>
     )
