@@ -1,5 +1,25 @@
 .containerHome {
-        width: 100vw;
-        height: 100vh;
-        background-color: #334B35;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    background-color: #334B35;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.containerBox {
+    width: 1720px;
+    padding: 0 64px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,12 +1,14 @@
 import {Fragment} from "react";
 import SearchIcon from '@mui/icons-material/Search';
 
-export default function MagnifyingGlassIcon () {
+type Props = {
+    size: any
+}
+
+export default function MagnifyingGlassIcon ({size} : Props) {
     return (
         <Fragment>
-            <div>
-                <SearchIcon/>
-            </div>
+                <SearchIcon fontSize={size}/>
         </Fragment>
     )
 }
