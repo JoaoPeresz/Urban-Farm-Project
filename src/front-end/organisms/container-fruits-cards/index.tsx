@@ -11,12 +11,16 @@ import carrot from "@/public/products/carrot.png";
 export default function ContainerFruitsCards() {
     return (
         <Fragment>
-            <MiniCardProducts fruit={strawberry} nameFruit={"morango"}/>
-            <MiniCardProducts fruit={apple} nameFruit={"morango"}/>
-            <MiniCardProducts fruit={blueberry} nameFruit={"morango"}/>
-            <MiniCardProducts fruit={cabbage} nameFruit={"morango"}/>
-            <MiniCardProducts fruit={eggplant} nameFruit={"morango"}/>
-            <MiniCardProducts fruit={carrot} nameFruit={"morango"}/>
+            <div className={styles.containerCards}>
+                <div className={styles.containerBox}>
+                    <MiniCardProducts fruit={strawberry} nameFruit={"morango"}/>
+                    <MiniCardProducts fruit={apple} nameFruit={"morango"}/>
+                    <MiniCardProducts fruit={blueberry} nameFruit={"morango"}/>
+                    <MiniCardProducts fruit={cabbage} nameFruit={"morango"}/>
+                    <MiniCardProducts fruit={eggplant} nameFruit={"morango"}/>
+                    <MiniCardProducts fruit={carrot} nameFruit={"morango"}/>
+                </div>
+            </div>
         </Fragment>
     )
 }

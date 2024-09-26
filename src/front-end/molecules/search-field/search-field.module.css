@@ -1,6 +1,6 @@
 .containerNavigationBar {
     display: flex;
-    position: absolute;
+    width: 20%;
     left: 150px;
 }
 

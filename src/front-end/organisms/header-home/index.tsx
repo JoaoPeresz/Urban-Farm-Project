@@ -1,14 +1,17 @@
 import {Fragment} from "react";
 import styles from "./header-home.module.css"
-import LogoAgroCidade from "@/src/front-end/atoms/logo-agro-cidade";
+import Image from "next/image";
+import logo from "../../../../public/assets/logo-agrocidade-2.png"
 import SearchField from "@/src/front-end/molecules/search-field";
 
-export default function HeaderHome () {
+export default function HeaderHome() {
     return (
         <Fragment>
             <div className={styles.containerHeader}>
-                <LogoAgroCidade/>
-                <SearchField/>
+                <div className={styles.contaienerBox}>
+                    <Image height={80} width={80} src={logo} alt={"logo"}/>
+                    <SearchField/>
+                </div>
             </div>
         </Fragment>
     )

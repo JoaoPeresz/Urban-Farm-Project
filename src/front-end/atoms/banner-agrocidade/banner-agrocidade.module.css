@@ -1,6 +1,11 @@
 .containerBanner {
-    position: relative;
-    width: 100%;
-    height: 1024px;
+    width: 100vw;
+    height: 980px;
+    overflow: hidden;
+}
 
+.bannerImage {
+    width: 100%;
+    height: auto;
+    display: block;
 }

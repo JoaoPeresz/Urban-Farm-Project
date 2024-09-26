@@ -10,9 +10,7 @@ export default function BannerAgrocidade() {
                 <Image
                     src={banner}
                     alt={"banner"}
-                    layout="fill"
-                    objectFit="cover"
-                    priority
+                    className={styles.bannerImage}
                 />
             </div>
         </Fragment>
