@@ -1,27 +1,31 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, request, jsonify, session, redirect
 import functions.database
 
-
-
-
 app = Flask(__name__)
-CORS(app)
-
-# exemplo de endpoint
-@app.route('/api/submit', methods=['POST'])
-def submit_data():
-    data = request.json  # pega a informação manda através de POST no front-end
-    print('Received data:', data)
-
-
-    #trata a informação recebida
 
 
 
+# Login API
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    usuario = data['login'].upper()
+    senha = data['senha']
 
-    # retorna mensagem que deu certo a conexão
-    return jsonify({'message': 'Data received successfully', 'receivedData': data}), 200
+    conn = pyodbc.connect(connection_string)
+
+    cursor = conn.cursor()
+
+    query = """
+        SELECT email_usuario,
+               senha_usuaro,
+            FROM DBA.FAZENDA_USUARIOS
+            WHERE email_usuario = :usuario
+            AND senha = :senha
+    """
+    cursor.prepare(query)
+    cursor.execute(None, {'usuario': usuario, 'senha': senha})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
