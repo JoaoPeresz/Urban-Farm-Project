@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import functions/database.py
+import functions.database
+
 
 
 
