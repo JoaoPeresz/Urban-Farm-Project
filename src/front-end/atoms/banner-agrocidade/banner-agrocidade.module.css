@@ -1,0 +1,11 @@
+.containerBanner {
+    width: 100vw;
+    height: 980px;
+    overflow: hidden;
+}
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}

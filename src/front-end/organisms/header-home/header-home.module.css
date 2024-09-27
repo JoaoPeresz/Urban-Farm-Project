@@ -1,10 +1,13 @@
-.containerHeaderHome {
-    width: 100%;
-    height: 90px;
+.containerHeader {
     display: flex;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+}
+
+.contaienerBox {
+    margin-left: 30px;
+    display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.85);
 }

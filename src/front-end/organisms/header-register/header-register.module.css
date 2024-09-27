@@ -1,13 +1,14 @@
 .headerContainer {
     width: 100%;
-    height: 90px;
+    height: 10%;
+    max-height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.85);
+    justify-content: center;
+    text-align: center;
     position: absolute;
     top: 0;
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 .headerContent {

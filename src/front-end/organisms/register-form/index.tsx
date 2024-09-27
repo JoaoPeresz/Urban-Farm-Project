@@ -3,11 +3,12 @@
 import {Fragment, useEffect, useState} from "react";
 import styles from "./register-form.module.css";
 import Image from "next/image";
-import title from "../../../../public/assets/title.urban.farm.png"
+import title from "../../../../public/assets/banner.png"
 import InputEmail from "@/src/front-end/molecules/input-email";
 import InputPassword from "@/src/front-end/molecules/input-password";
 import ButtonSigIn from "@/src/front-end/molecules/button-sig-in";
 import TextField from "../../atoms/text-field";
+import ErrorMessage from "@/src/front-end/atoms/error-message";
 
 export default function RegisterForm() {
 
@@ -48,8 +49,15 @@ export default function RegisterForm() {
                         <InputEmail onEmailChange={handlerEmailChange}/>
                         <InputPassword onPasswordChange={handlerPasswordChange}/>
                         <InputPassword onPasswordChange={confirmingPassword}/>
-                    </div>
+                        <div className={styles.containerErrorMessage}>
+                            {isSamePassword ? (
+                                ""
+                            ) : (
+                                <ErrorMessage/>
+                            )}
+                        </div>
                 <ButtonSigIn/>
+                    </div>
             </div>
         </Fragment>
     )
