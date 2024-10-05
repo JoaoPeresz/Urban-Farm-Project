@@ -1,6 +1,6 @@
 import {Fragment} from "react";
 import Image from "next/image";
-import logoAgro from "../../../../public/assets/logo-agrocidade-2.png"
+import logoAgro from "../../../../public/assets/image 28.png"
 import styles from "./logo-agro-cidade.module.css"
 
 export default function LogoAgroCidade () {

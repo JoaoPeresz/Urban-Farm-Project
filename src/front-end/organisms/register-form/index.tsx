@@ -31,10 +31,8 @@ export default function RegisterForm() {
     useEffect(() => {
         if (passwordConfirm === password) {
             setIsSamePassword(true)
-            console.log(isSamePassword)
         } else {
             setIsSamePassword(false)
-            console.log(isSamePassword)
         }
     }, [password, passwordConfirm]);
 
