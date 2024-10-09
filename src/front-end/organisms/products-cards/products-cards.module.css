@@ -1,0 +1,26 @@
+.containerCards {
+    width: 1500px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.containerBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerLeft {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
+.containerRight {
+    width: 450px;
+    margin-top: 445px;
+    gap: 300px;
+    display: flex;
+    flex-direction: column;
+}
