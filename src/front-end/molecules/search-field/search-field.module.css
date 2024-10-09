@@ -1,7 +1,6 @@
 .containerNavigationBar {
     display: flex;
     width: 20%;
-    left: 150px;
 }
 
 .input {

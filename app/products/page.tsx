@@ -1,15 +1,15 @@
 "use client"
 
+import styles from "./our-products-page.module.css";
 import {Fragment} from "react";
-import styles from "./home-page.module.css"
-import Home from "../../src/front-end/templates/home"
+import OurProducts from "@/src/front-end/templates/our-products";
 
-export default function HomePage() {
+export default function OurProductsPage() {
     return (
         <Fragment>
             <div className={styles.homePage}>
                 <div className={styles.containerBox}>
-                    <Home/>
+                    <OurProducts/>
                 </div>
             </div>
         </Fragment>

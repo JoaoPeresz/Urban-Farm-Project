@@ -1,0 +1,23 @@
+.containerBanner {
+    width: 100%;
+    background-image: url("../../../../public/assets/banner-products.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 464px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 800;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.greenCircle {
+    position: absolute;
+    left: 350px;
+    bottom: 160px;
+}

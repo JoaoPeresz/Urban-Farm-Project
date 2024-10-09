@@ -1,0 +1,33 @@
+.containerCard {
+    width: 1500px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerBox {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+
+.image {
+    display: flex;
+    height: 300px;
+    border-radius: 32px;
+}
+
+.description {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: justify;
+}
