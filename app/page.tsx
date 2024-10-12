@@ -1,11 +1,11 @@
 import {Fragment} from "react";
-import LoginPage from "../pages/login-page";
+import LoginPage from "./login-page";
 
-export default function Home() {
+export default function App() {
 
   return (
     <Fragment>
-      <LoginPage/>
+        <LoginPage/>
     </Fragment>
   );
 }

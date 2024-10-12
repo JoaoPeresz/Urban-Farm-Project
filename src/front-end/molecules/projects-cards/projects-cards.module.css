@@ -1,0 +1,35 @@
+.containerProjects {
+    position: relative;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+    border:none;
+}
+
+.containerProjects:hover {
+    border: 2px solid #F7C35F;
+    transition: 0.4s;
+    margin-bottom: 40px;
+    box-shadow: 0 0 16px 1px rgba(247,195,95,0.67);
+    -webkit-box-shadow: 0 0 16px 1px rgba(247,195,95,0.67);
+    -moz-box-shadow: 0 0 16px 1px rgba(247,195,95,0.67);
+}
+
+.containerTitle {
+    font-size: 15px;
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    color: #F7C35F;
+}
+
+.containerDescription {
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: white;
+}

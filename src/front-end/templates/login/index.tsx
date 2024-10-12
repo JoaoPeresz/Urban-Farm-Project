@@ -1,13 +1,10 @@
-"use client"
-
 import {Fragment, useState} from "react";
 import styles from "./login-home.module.css"
-import HeaderHome from "../../organisms/header-home";
-import RegisterForm from "../../organisms/login-form";
 import {useRouter} from "next/navigation";
 import LoginForm from "../../organisms/login-form";
+import HeaderLogin from "../../organisms/header-login";
 
-export default function LoginHome() {
+export default function Login() {
 
     const [userEmail, setuserEmail] = useState<string>("")
     const [password, setpassword] = useState<string>("")
@@ -28,7 +25,7 @@ export default function LoginHome() {
     return (
         <Fragment>
             <div className={styles.containerHome}>
-                <HeaderHome createAccount={createAccount}/>
+                <HeaderLogin createAccount={createAccount}/>
                 <LoginForm handlerEmailChange={handlerEmailChange} handlerPasswordChange={handlerPasswordChange}/>
             </div>
         </Fragment>

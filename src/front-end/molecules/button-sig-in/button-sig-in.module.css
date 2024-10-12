@@ -1,7 +1,6 @@
 .containerButton {
     transition: 1s;
     background-color: #334B35;
-    width: 100%;
     height: 60px;
     border-radius: 32px;
     display: flex;

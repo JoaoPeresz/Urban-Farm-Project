@@ -1,0 +1,6 @@
+.containerError {
+    color: #e44646;
+    display: flex;
+    height: 10px;
+    margin-top: -10px;
+}

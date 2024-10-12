@@ -1,20 +1,23 @@
-"use client"
-
 import {Fragment} from "react";
 import styles from "./header-home.module.css"
-import LogoAgroCidade from "@/src/front-end/atoms/logo-agro-cidade";
-import RegisterButton from "@/src/front-end/molecules/register-button";
+import Image from "next/image";
+import logo from "../../../../public/assets/agrocidade-logo.png"
+import SearchField from "@/src/front-end/molecules/search-field";
+import NavigationBar from "@/src/front-end/molecules/navigation-bar";
 
 type Props = {
-    createAccount : () => void
+    statusNavigation: number
 }
 
-export default function HeaderHome ({createAccount} : Props) {
+export default function HeaderHome ({statusNavigation} : Props) {
     return (
         <Fragment>
-            <div className={styles.containerHeaderHome}>
-                <LogoAgroCidade/>
-                <RegisterButton createAccount={createAccount}/>
+            <div className={styles.containerHeader}>
+                <div  className={styles.containerBox}>
+                    <Image height={90} width={90} src={logo} alt={"logo"}/>
+                    <SearchField/>
+                    <NavigationBar statusNavigation={statusNavigation}/>
+                </div>
             </div>
         </Fragment>
     )

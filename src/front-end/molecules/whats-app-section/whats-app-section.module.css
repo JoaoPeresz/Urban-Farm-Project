@@ -1,0 +1,8 @@
+.whatsApp {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    padding: 8px;
+}

@@ -1,8 +1,8 @@
 .containerButton {
+    height: 75%;
     border: 2px solid #334B35;
     border-radius: 8px;
     padding: 0 20px;
-    height: 60px;
     margin-right: 40px;
     color: #334B35;
     font-size: 20px;
