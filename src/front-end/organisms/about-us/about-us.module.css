@@ -1,0 +1,86 @@
+.aboutUsSection {
+    background-color: #305633;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.founderImage {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.textContainer {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.founderName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.founderRole {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+.paginationDots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot, .activeDot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ffa500;
+}
+
+.activeDot {
+    background-color: #fff;
+}

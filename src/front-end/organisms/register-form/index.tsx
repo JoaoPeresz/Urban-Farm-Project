@@ -1,3 +1,5 @@
+"use client";
+
 import {Fragment, useEffect, useState} from "react";
 import styles from "./register-form.module.css";
 import Image from "next/image";

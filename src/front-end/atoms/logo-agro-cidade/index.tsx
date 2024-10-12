@@ -7,7 +7,7 @@ export default function LogoAgroCidade () {
     return (
         <Fragment>
             <div className={styles.containerLogo}>
-                <Image width={0} height={0} src={logoAgro} alt={'logo'}/>
+                <Image width={150} src={logoAgro} alt={'logo'}/>
             </div>
         </Fragment>
     )
