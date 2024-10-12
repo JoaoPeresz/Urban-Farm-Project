@@ -19,6 +19,10 @@ export default function NavigationBar({statusNavigation}: Props) {
         router.push("/home-page")
      }
 
+     const SwitchToWhoWeArePage = () => {
+        router.push("/who-we-are-page")
+     }
+
      const SwitchToProducts = () => {
         router.push("/products")
      }
@@ -33,7 +37,7 @@ export default function NavigationBar({statusNavigation}: Props) {
                 <p onClick={SwitchToHomePage} className={`${statusNavigation === homePage ? styles.TextOnFocus : styles.TextOutFocus}`}>
                    Página inicial
                 </p>
-                <p className={`${statusNavigation === WhoWeAre ? styles.TextOnFocus : styles.TextOutFocus}`}>
+                <p onClick={SwitchToWhoWeArePage} className={`${statusNavigation === WhoWeAre ? styles.TextOnFocus : styles.TextOutFocus}`}>
                     Quem somos
                 </p>
                 <p onClick={SwitchToProducts} className={`${statusNavigation === OurProducts ? styles.TextOnFocus : styles.TextOutFocus}`}>

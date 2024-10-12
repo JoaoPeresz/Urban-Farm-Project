@@ -3,7 +3,7 @@
     background-image: url("../../../../public/assets/banner-products.png");
     background-repeat: no-repeat;
     background-position: center;
-    height: 464px;
+    height: 300px;
     display: flex;
     align-items: center;
     position: relative;
@@ -19,5 +19,5 @@
 .greenCircle {
     position: absolute;
     left: 350px;
-    bottom: 160px;
+    bottom: 75px;
 }

@@ -13,47 +13,42 @@ export default function ProductsCards() {
         <Fragment>
             <div className={styles.containerCards}>
                 <div className={styles.containerBox}>
-                    <div className={styles.containerLeft}>
-                        <LargeCardProducts
-                            productImage={banana}
-                            name="Banana"
-                            category="Frutas Tropicais"
-                            description={"Fruta rica em potássio e fibras, perfeita para lanches rápidos e smoothies. Clique para explorar variedades."}
-                        />
-                        <LargeCardProducts
-                            productImage={apple}
-                            name="Maçã"
-                            category="Frutas"
-                            description={"Fruta crocante e refrescante, rica em fibras e antioxidantes. Ideal para lanches ou em saladas. Clique para explorar variedades."}
-                        />
-                        <LargeCardProducts
-                            productImage={strawberry}
-                            name="Morango"
-                            category="Frutas Vermelhas"
-                            description={"Fruta doce e suculenta, rica em vitamina C e antioxidantes. Perfeita para sobremesas e smoothies. Clique para explorar variedades."}
-                        />
-                    </div>
-                    <div className={styles.containerRight}>
-                            <LargeCardProducts
-                                productImage={eggplant}
-                                name="Beringela"
-                                category="Legumes"
-                                description={"Legume versátil, rico em fibras e antioxidantes. Ideal para grelhar, assar ou incluir em pratos como ratatouille. Clique para explorar variedades."}
-                            />
-                            <LargeCardProducts
-                                productImage={cabbage}
-                                name="Repolho"
-                                category="Vegetais Crucíferos"
-                                description={"Vegetal crocante e nutritivo, rico em vitaminas e fibras. Ótimo para saladas, sopas e refogados. Clique para explorar variedades."}
-                            />
-                            <LargeCardProducts
-                                productImage={lettuce}
-                                name="Alface"
-                                category="Vegetais Folhosos"
-                                description={"Folha fresca e crocante, rica em água e fibras. Perfeita para saladas e sanduíches. Clique para explorar variedades."}
-                            />
-
-                    </div>
+                    <LargeCardProducts
+                        productImage={banana}
+                        name="Banana"
+                        category="Frutas Tropicais"
+                        description={"Fruta rica em potássio e fibras, perfeita para lanches rápidos e smoothies. Clique para explorar variedades."}
+                    />
+                    <LargeCardProducts
+                        productImage={apple}
+                        name="Maçã"
+                        category="Frutas"
+                        description={"Fruta crocante e refrescante, rica em fibras e antioxidantes. Ideal para lanches ou em saladas. Clique para explorar variedades."}
+                    />
+                    <LargeCardProducts
+                        productImage={strawberry}
+                        name="Morango"
+                        category="Frutas Vermelhas"
+                        description={"Fruta doce e suculenta, rica em vitamina C e antioxidantes. Perfeita para sobremesas e smoothies. Clique para explorar variedades."}
+                    />
+                    <LargeCardProducts
+                        productImage={eggplant}
+                        name="Beringela"
+                        category="Legumes"
+                        description={"Legume versátil, rico em fibras e antioxidantes. Ideal para grelhar, assar ou incluir em pratos como ratatouille. Clique para explorar variedades."}
+                    />
+                    <LargeCardProducts
+                        productImage={cabbage}
+                        name="Repolho"
+                        category="Vegetais Crucíferos"
+                        description={"Vegetal crocante e nutritivo, rico em vitaminas e fibras. Ótimo para saladas, sopas e refogados. Clique para explorar variedades."}
+                    />
+                    <LargeCardProducts
+                        productImage={lettuce}
+                        name="Alface"
+                        category="Vegetais Folhosos"
+                        description={"Folha fresca e crocante, rica em água e fibras. Perfeita para saladas e sanduíches. Clique para explorar variedades."}
+                    />
                 </div>
             </div>
         </Fragment>

@@ -1,21 +1,21 @@
 import {Fragment} from "react";
-import HeaderWhoWeAre from "@/src/front-end/organisms/header-who-we-are";
 import AboutUs from "@/src/front-end/organisms/about-us";
 import AboutFarm from "@/src/front-end/organisms/about-farm";
 import styles from "./who-we-are.module.css"
-import FooterAboutUs from "@/src/front-end/organisms/footer-about-us";
+import HeaderHome from "@/src/front-end/organisms/header-home";
+import FooterDefault from "@/src/front-end/organisms/footer-default";
 
 export default function WhoWeAre() {
 
     return (
         <Fragment>
             <div>
-                <HeaderWhoWeAre/>
+                <HeaderHome statusNavigation={50}/>
                 <div className={styles.page}>
                     <AboutUs/>
                     <AboutFarm/>
                 </div>
-                <FooterAboutUs/>
+                <FooterDefault/>
             </div>
         </Fragment>
     );
