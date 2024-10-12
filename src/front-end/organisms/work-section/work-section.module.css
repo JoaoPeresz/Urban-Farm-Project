@@ -2,7 +2,6 @@
     width: 100vw;
     max-width: 100vw;
     height: 800px;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +9,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     color: black;
+    background-color: #263C28;
     background-image: url("../../../../public/assets/grass.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,6 @@
     justify-content: flex-start;
     color: #ffffff;
     font-size: 30px;
-    margin-bottom: 50px;
 }
 
 .title {

@@ -1,5 +1,3 @@
-"use client"
-
 import {Fragment} from "react";
 import styles from "./register-button.module.css"
 import TextField from "../../atoms/text-field";

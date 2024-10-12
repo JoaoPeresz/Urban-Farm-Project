@@ -4,7 +4,21 @@ import RegisterForm from "@/src/front-end/organisms/register-form";
 import {useRouter} from "next/navigation";
 import styles from "./register.module.css";
 
-export default function Register () {
+type Props = {
+    handlerEmailChange: (newEmail: string) => void
+    handlerPasswordChange:  (userPassword: string) => void
+    confirmingPassword: (userPassword: string) => void
+    isSamePassword: boolean
+    isConfirmPasswordDirty: boolean
+}
+
+export default function Register({
+                                     handlerEmailChange,
+                                     handlerPasswordChange,
+                                     confirmingPassword,
+                                     isSamePassword,
+                                     isConfirmPasswordDirty
+                                 }: Props) {
 
     const router = useRouter();
 
@@ -16,8 +30,14 @@ export default function Register () {
         <Fragment>
             <div className={styles.containerRegister}>
                 <HeaderRegister goBackPage={goBackPage}/>
-                <RegisterForm/>
+                <RegisterForm
+                    handlerEmailChange={handlerEmailChange}
+                    handlerPasswordChange={handlerPasswordChange}
+                    confirmingPassword={confirmingPassword}
+                    isSamePassword={isSamePassword}
+                    isConfirmPasswordDirty={isConfirmPasswordDirty}
+                />
             </div>
         </Fragment>
-)
+    )
 }

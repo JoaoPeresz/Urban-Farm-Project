@@ -1,5 +1,3 @@
-"use client"
-
 import {Fragment} from "react";
 import styles from "./header-home.module.css"
 import LogoAgroCidade from "@/src/front-end/atoms/logo-agro-cidade";

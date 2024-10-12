@@ -4,7 +4,7 @@ import TextField from "@/src/front-end/atoms/text-field";
 import ToggleVisibility from "@/src/front-end/molecules/toggle-visibility";
 
 type Props = {
-    onPasswordChange : any
+    onPasswordChange :(userPassword: string) => void
 }
 
 export default function InputPassword({onPasswordChange}: Props) {

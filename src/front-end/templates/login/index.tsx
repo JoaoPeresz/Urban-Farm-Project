@@ -1,5 +1,3 @@
-"use client"
-
 import {Fragment, useState} from "react";
 import styles from "./login-home.module.css"
 import {useRouter} from "next/navigation";
