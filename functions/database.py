@@ -1,30 +1,31 @@
-import pyodbc 
+import psycopg2
 
-agrocity = 'AgroHost'
-dbaagro = 'Agrocidade'
-user = 'administrator'
-password = '1234'
+try:
+    # Connect to your postgres DB
+    connection = psycopg2.connect(
+        host="your_host",
+        database="your_database",
+        user="your_username",
+        password="your_password",
+        port="your_port"  # Default PostgreSQL port is 5432
+    )
 
-connection_string = (
-    f'DRIVER={{ODBC Driver 17 for SQL Server}};'
-    f'SERVER={agrocity};'
-    f'dbaagro={dbaagro};'
-    f'Login={user};'
-    f'Password={password};'
-)
+    # Cria o cursor
+    cursor = connection.cursor()
+    
+    # Executa a SQL query
+    cursor.execute("SELECT version();")
 
-"""
-Example of connection to bring query results:
+    # Fetch o resultado
+    record = cursor.fetchone()
+    print(f"You are connected to - {record}\n")
 
-conn = pyodbc.connect(connection_string) -- Opens the connection
+except Exception as error:
+    print(f"Error while connecting to PostgreSQL: {error}")
 
-cursor = conn.cursor() -- Creates the cursor to send Query
-
-cursor.execute(SELECT * FROM TABLE_NAME) -- Executes your query
-
-rows = cursor.fetchall() -- fetch all data received from the query
-
-for row in rows:  -- pick data from each row 
-    print(row)
-
-conn.close()
+finally:
+    # Closing database connection
+    if connection:
+        cursor.close()
+        connection.close()
+        print("PostgreSQL connection is closed")
