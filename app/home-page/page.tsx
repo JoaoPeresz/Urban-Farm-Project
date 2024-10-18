@@ -17,8 +17,7 @@ export default function HomePage() {
         <Fragment>
             <div className={styles.homePage}>
                 <div className={styles.containerBox}>
-                    <Home
-                        registerSupplier={RedirectRegisterSuplier}
+                    <Home registerSupplier={RedirectRegisterSuplier}
                     />
                 </div>
             </div>

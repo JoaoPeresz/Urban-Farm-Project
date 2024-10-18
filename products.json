@@ -1,0 +1,452 @@
+[
+  {
+    "category": "Maçã",
+    "type": [
+      {
+        "id": 1,
+        "image": "/variety-of-products/apples/maçã-gala.png",
+        "name": "Maçã Gala",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$2,99    0,500/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/apples/maçã-fuji.png",
+        "name": "Maçã Fuji",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$1,80    0,300/ kg"
+      },
+      {
+        "id": 3,
+        "image": "/variety-of-products/apples/maçã-red.png",
+        "name": "Maçã Red",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$1,80    0,300/ kg"
+      },
+      {
+        "id": 4,
+        "image": "/variety-of-products/apples/maçã-verde.png",
+        "name": "Maçã Verde",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$2,99    0,500/ kg"
+      },
+      {
+        "id": 5,
+        "image": "/variety-of-products/apples/maçã-royal.png",
+        "name": "Maçã Royal",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$1,80    0,300/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/apples/maçã-ambrosia.png",
+        "name": "Maçã Ambrosia",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$1,80    0,300/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/apples/maçã-honeycrisp.png",
+        "name": "Maçã Honeycrisp",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$1,80    0,300/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/apples/maçã-breaeburn.png",
+        "name": "Maçã Braeburn",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$2,99    0,500/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/apples/maçã-mcintosh.png",
+        "name": "Maçã Mcintosh",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$1,80    0,300/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/apples/maçã-pink-lady.png",
+        "name": "Maçã Pink Lady",
+        "price": "R$ 5.99 / kg",
+        "weight": "R$2,99    0,500/ kg"
+      }
+    ]
+  },
+  {
+    "category": "Morango",
+    "type": [
+      {
+        "id": 1,
+        "image": "/variety-of-products/strawberry/morango-camarosa.png",
+        "name": "Morango Camarosa",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/strawberry/morango-festival.png",
+        "name": "Morango Festival",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 3,
+        "image": "/variety-of-products/strawberry/morango-seascape.png",
+        "name": "Morango Seascape",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 4,
+        "image": "/variety-of-products/strawberry/morango-monterey.png",
+        "name": "Morango Monterey",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 5,
+        "image": "/variety-of-products/strawberry/morango-diamante.png",
+        "name": "Morango Diamante",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 6,
+        "image": "/variety-of-products/strawberry/morango-albion.png",
+        "name": "Morango Albion",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 7,
+        "image": "/variety-of-products/strawberry/morango-chandler.png",
+        "name": "Morango Chandler",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 8,
+        "image": "/variety-of-products/strawberry/morango-sweet-charlie.png",
+        "name": "Morango Sweet Charlie",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 9,
+        "image": "/variety-of-products/strawberry/morango-oso-grande.png",
+        "name": "Morango Oso Grande",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 10,
+        "image": "/variety-of-products/strawberry/morango-san-andreas.png",
+        "name": "Morango San Andreas",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      }
+    ]
+  },
+  {
+    "category": "Repolho",
+    "type": [
+      {
+        "id": 1,
+        "image": "/variety-of-products/cabbage/repolho-verde.png",
+        "name": "Repolho Verde",
+        "price": "R$ 2.99 / kg",
+        "weight": "R$4,18    1,400/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/cabbage/repolho-chinês.png",
+        "name": "Repolho",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 3,
+        "image": "/variety-of-products/cabbage/repolho-verde-escuro.png",
+        "name": "Repolho Verde Escuro",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 4,
+        "image": "/variety-of-products/cabbage/repolho-flor.png",
+        "name": "Repolho De Flor",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 5,
+        "image": "/variety-of-products/cabbage/repolho-verde-liso.png",
+        "name": "Repolho Verde Liso",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 6,
+        "image": "/variety-of-products/cabbage/repolho-savoy.png",
+        "name": "Repolho Savoy",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 7,
+        "image": "/variety-of-products/cabbage/repolho-bruxelas.png",
+        "name": "Repolho De Bruxelas",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 8,
+        "image": "/variety-of-products/cabbage/repolho-ponta-rosa.png",
+        "name": "Repolho Ponta De Rosa",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 9,
+        "image": "/variety-of-products/cabbage/repolho-branco.png",
+        "name": "Repolho Branco",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 10,
+        "image": "/variety-of-products/cabbage/repolho-roxo.png",
+        "name": "Repolho Roxo",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      }
+    ]
+  },
+  {
+    "category": "Banana",
+    "type": [
+      {
+        "id": 1,
+        "image": "/variety-of-products/banana/banana-prata.png",
+        "name": "Banana Prata",
+        "price": "R$ 16,99",
+        "weight": "R$2,71 0,160/kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/banana/banana-maca.png",
+        "name": "Banana Maçã",
+        "price": "R$ 16,99",
+        "weight": "R$2,71 0,160/kg"
+      },
+      {
+        "id": 3,
+        "image": "/variety-of-products/banana/banana-ouro.png",
+        "name": "Banana Ouro",
+        "price": "R$ 11,99",
+        "weight": "R$1,55 0,150/kg"
+      },
+      {
+        "id": 4,
+        "image": "/variety-of-products/banana/banana-figo.png",
+        "name": "Banana Figo",
+        "price": "R$ 16,99",
+        "weight": "R$2,71 0,160/kg"
+      },
+      {
+        "id": 5,
+        "image": "/variety-of-products/banana/banana-vermelha.png",
+        "name": "Banana Vermelha",
+        "price": "R$ 11,99",
+        "weight": "R$1,55 0,150/kg"
+      },
+      {
+        "id": 6,
+        "image": "/variety-of-products/banana/banana-nanica.png",
+        "name": "Banana Nanica",
+        "price": "R$ 11,99",
+        "weight": "R$1,55 0,150/kg"
+      },
+      {
+        "id": 7,
+        "image": "/variety-of-products/banana/banana-terra.png",
+        "name": "Banana Da Terra",
+        "price": "R$ 16,99",
+        "weight": "R$2,71 0,160/kg"
+      },
+      {
+        "id": 8,
+        "image": "/variety-of-products/banana/banana-angola.png",
+        "name": "Banana ",
+        "price": "R$ 11,99",
+        "weight": "R$1,55 0,150/kg"
+      },
+      {
+        "id": 9,
+        "image": "/variety-of-products/banana/banana-cavendish.png",
+        "name": "Banana Cavendish",
+        "price": "R$ 11,99",
+        "weight": "R$1,55 0,150/kg"
+      },
+      {
+        "id": 10,
+        "image": "/variety-of-products/banana/banana-leite.png",
+        "name": "Banana Leite",
+        "price": "R$ 16,99",
+        "weight": "R$2,71 0,160/kg"
+      }
+    ]
+  },
+  {
+    "category": "Beringela",
+    "type": [
+      {
+        "id": 1,
+        "image": "/variety-of-products/eggplant/beringela-negra.png",
+        "name": "Beringela Negra",
+        "price": "R$ 2.99 / kg",
+        "weight": "R$4,18    1,400/ kg"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/eggplant/beringela-zebra.png",
+        "name": "Beringela Zebra",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 3,
+        "image": "/variety-of-products/eggplant/beringela-baby.png",
+        "name": "Beringela Baby",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 4,
+        "image": "/variety-of-products/eggplant/beringela-moranga.png",
+        "name": "Beringela Moranga",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 5,
+        "image": "/variety-of-products/eggplant/beringela-india.png",
+        "name": "Beringela da Índia",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 6,
+        "image": "/variety-of-products/eggplant/beringela-italiana.png",
+        "name": "Beringela Italiana",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 7,
+        "image": "/variety-of-products/eggplant/beringela-branca.png",
+        "name": "Beringela Branca",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      },
+      {
+        "id": 8,
+        "image": "/variety-of-products/eggplant/beringela-longa.png",
+        "name": "Beringela Longa",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 9,
+        "image": "/variety-of-products/eggplant/beringela-fume.png",
+        "name": "Beringela Fumê",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$10,50    0,300/ kg"
+      },
+      {
+        "id": 10,
+        "image": "/variety-of-products/eggplant/beringela-italiana-branca.png",
+        "name": "Beringela Italiana Branca",
+        "price": "R$ 29.99 / kg",
+        "weight": "R$18,00    0,600/ kg"
+      }
+    ]
+  },
+  {
+    "category": "Alface",
+    "type": [
+      {
+        "id": 1,
+        "image": "/variety-of-products/lettuce/alface-americana.png",
+        "name": "Alface Americana",
+        "price": "5,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 2,
+        "image": "/variety-of-products/lettuce/alface-crespa.png",
+        "name": "Alface Crespa",
+        "price": "7,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 3,
+        "image": "/variety-of-products/lettuce/alface-frisee.png",
+        "name": "Alface Frisé",
+        "price": "7,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 4,
+        "image": "/variety-of-products/lettuce/alface-butterhead.png",
+        "name": "Alface Butterhead",
+        "price": "9,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 5,
+        "image": "/variety-of-products/lettuce/alface-baby.png",
+        "name": "Alface Baby",
+        "price": "7,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 6,
+        "image": "/variety-of-products/lettuce/alface-lisa.png",
+        "name": "Alface Lisa",
+        "price": "9,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 7,
+        "image": "/variety-of-products/lettuce/alface-roxa.png",
+        "name": "Alface Roxa",
+        "price": "7,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 8,
+        "image": "/variety-of-products/lettuce/alface-romana.png",
+        "name": "Alface Romana",
+        "price": "7,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 9,
+        "image": "/variety-of-products/lettuce/alface-selvagem.png",
+        "name": "Alface Selvagem",
+        "price": "7,99",
+        "weight": "Unidade"
+      },
+      {
+        "id": 10,
+        "image": "/variety-of-products/lettuce/alface-iceberg.png",
+        "name": "Alface Iceberg",
+        "price": "9,99",
+        "weight": "Unidade"
+      }
+    ]
+  }
+]
