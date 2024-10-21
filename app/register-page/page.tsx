@@ -65,7 +65,6 @@ export default function Page() {
             console.log('error')
         }
     }
-
     const handlerEmailChange = (newEmail: string) => {
         setuserEmail(newEmail);
     };
