@@ -7,17 +7,19 @@ type Props = {
     name: string
     category: string
     description: string
+    handlerInfoProducts: () => void
 }
 
 export default function LargeCardProducts({   productImage,
                                               name,
                                               category,
                                               description,
+                                              handlerInfoProducts
                                           }: Props) {
 
     return (
         <Fragment>
-            <div className={styles.containerCard}>
+            <div onClick={handlerInfoProducts} className={styles.containerCard}>
                 <div className={styles.containerBox}>
                     <Image className={styles.image} src={productImage} alt={"product-image"}/>
                     <div className={styles.description}>
