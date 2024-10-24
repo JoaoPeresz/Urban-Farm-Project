@@ -300,75 +300,75 @@
     ]
   },
   {
-    "category": "Beringela",
+    "category": "Berinjela",
     "type": [
       {
         "id": 1,
         "image": "/variety-of-products/eggplant/beringela-negra.png",
-        "name": "Beringela Negra",
+        "name": "Berinjela Negra",
         "price": "R$ 2.99 / kg",
         "weight": "R$4,18    1,400/ kg"
       },
       {
         "id": 2,
         "image": "/variety-of-products/eggplant/beringela-zebra.png",
-        "name": "Beringela Zebra",
+        "name": "Berinjela Zebra",
         "price": "R$ 29.99 / kg",
         "weight": "R$10,50    0,300/ kg"
       },
       {
         "id": 3,
         "image": "/variety-of-products/eggplant/beringela-baby.png",
-        "name": "Beringela Baby",
+        "name": "Berinjela Baby",
         "price": "R$ 29.99 / kg",
         "weight": "R$10,50    0,300/ kg"
       },
       {
         "id": 4,
         "image": "/variety-of-products/eggplant/beringela-moranga.png",
-        "name": "Beringela Moranga",
+        "name": "Berinjela Moranga",
         "price": "R$ 29.99 / kg",
         "weight": "R$18,00    0,600/ kg"
       },
       {
         "id": 5,
         "image": "/variety-of-products/eggplant/beringela-india.png",
-        "name": "Beringela da Índia",
+        "name": "Berinjela da Índia",
         "price": "R$ 29.99 / kg",
         "weight": "R$10,50    0,300/ kg"
       },
       {
         "id": 6,
         "image": "/variety-of-products/eggplant/beringela-italiana.png",
-        "name": "Beringela Italiana",
+        "name": "Berinjela Italiana",
         "price": "R$ 29.99 / kg",
         "weight": "R$10,50    0,300/ kg"
       },
       {
         "id": 7,
         "image": "/variety-of-products/eggplant/beringela-branca.png",
-        "name": "Beringela Branca",
+        "name": "Berinjela Branca",
         "price": "R$ 29.99 / kg",
         "weight": "R$18,00    0,600/ kg"
       },
       {
         "id": 8,
         "image": "/variety-of-products/eggplant/beringela-longa.png",
-        "name": "Beringela Longa",
+        "name": "Berinjela Longa",
         "price": "R$ 29.99 / kg",
         "weight": "R$10,50    0,300/ kg"
       },
       {
         "id": 9,
         "image": "/variety-of-products/eggplant/beringela-fume.png",
-        "name": "Beringela Fumê",
+        "name": "Berinjela Fumê",
         "price": "R$ 29.99 / kg",
         "weight": "R$10,50    0,300/ kg"
       },
       {
         "id": 10,
         "image": "/variety-of-products/eggplant/beringela-italiana-branca.png",
-        "name": "Beringela Italiana Branca",
+        "name": "Berinjela Italiana Branca",
         "price": "R$ 29.99 / kg",
         "weight": "R$18,00    0,600/ kg"
       }
