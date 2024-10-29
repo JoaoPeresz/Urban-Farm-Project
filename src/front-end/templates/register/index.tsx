@@ -5,11 +5,16 @@ import {useRouter} from "next/navigation";
 import styles from "./register.module.css";
 
 type Props = {
-    handlerEmailChange: (newEmail: string) => void
-    handlerPasswordChange:  (userPassword: string) => void
-    confirmingPassword: (userPassword: string) => void
-    isSamePassword: boolean
-    isConfirmPasswordDirty: boolean
+    handlerEmailChange: (newEmail: string) => void,
+    handlerPasswordChange: (userPassword: string) => void,
+    confirmingPassword: (userPassword: string) => void,
+    isSamePassword: boolean,
+    isConfirmPasswordDirty: boolean,
+    isFinished: boolean,
+    formEmailValidator: boolean,
+    formPasswordValidator: boolean,
+    formConfirmPasswordValidator: boolean,
+    userData: any
 }
 
 export default function Register({
@@ -17,7 +22,12 @@ export default function Register({
                                      handlerPasswordChange,
                                      confirmingPassword,
                                      isSamePassword,
-                                     isConfirmPasswordDirty
+                                     isConfirmPasswordDirty,
+                                     isFinished,
+                                     formEmailValidator,
+                                     formPasswordValidator,
+                                     formConfirmPasswordValidator,
+                                     userData
                                  }: Props) {
 
     const router = useRouter();
