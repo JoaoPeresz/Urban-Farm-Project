@@ -1,0 +1,10 @@
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.titile {
+    font-size: 100%;
+}

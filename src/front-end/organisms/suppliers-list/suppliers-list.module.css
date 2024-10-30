@@ -1,0 +1,19 @@
+.containerList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: 380px;
+    background-color: #cfd3d3;
+    border-radius:  16px;
+    margin: 0 32px;
+}
+
+.containerButton {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 16px;
+}

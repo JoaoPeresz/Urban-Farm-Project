@@ -28,7 +28,7 @@ export default function NavigationBar({statusNavigation}: Props) {
      }
 
      const SwitchToSuppliers = () => {
-        router.push("/register-page")
+        router.push("/suppliers-page")
      }
 
     return (
