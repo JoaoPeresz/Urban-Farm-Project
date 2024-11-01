@@ -1,0 +1,12 @@
+.containerButton {
+    transition: 1s;
+    background-color: #334B35;
+    height: 60px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 22px;
+    cursor: pointer;
+}

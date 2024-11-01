@@ -6,15 +6,16 @@ import Image from "next/image";
 import title from "../../../../public/assets/banner.png";
 import InputEmail from "@/src/front-end/molecules/input-email";
 import InputPassword from "@/src/front-end/molecules/input-password";
-import ButtonSigIn from "@/src/front-end/molecules/button-sig-in";
 import ErrorMessage from "@/src/front-end/atoms/error-message";
+import ButtonSigInRegister from "../../molecules/button-sig-in-register";
 
 type Props = {
-    handlerEmailChange: (newEmail: string) => void
-    handlerPasswordChange: (userPassword: string) => void
-    confirmingPassword: (userPassword: string) => void
-    isSamePassword: boolean
-    isConfirmPasswordDirty: boolean
+    handlerEmailChange: (newEmail: string) => void,
+    handlerPasswordChange: (userPassword: string) => void,
+    confirmingPassword: (userPassword: string) => void,
+    isSamePassword: boolean,
+    isConfirmPasswordDirty: boolean,
+    completeRegistration?: (() => Promise<void>) | undefined
 }
 
 export default function RegisterForm({
@@ -22,7 +23,8 @@ export default function RegisterForm({
                                          handlerPasswordChange,
                                          confirmingPassword,
                                          isSamePassword,
-                                         isConfirmPasswordDirty
+                                         isConfirmPasswordDirty,
+                                         completeRegistration
                                      }: Props) {
 
     return (
@@ -42,7 +44,9 @@ export default function RegisterForm({
                             <ErrorMessage/>
                         )}
                     </div>
-                    <ButtonSigIn/>
+                    <ButtonSigInRegister
+                        completeRegistration={completeRegistration}
+                    />
                 </div>
             </div>
         </Fragment>

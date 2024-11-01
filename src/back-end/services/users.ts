@@ -1,28 +1,17 @@
-import {UserData} from "@/src/models/usersDTO";
+import { UserData } from "@/src/models/usersDTO";
 import UserRepository from "@/src/back-end/repositores/users";
 
 class UserService {
     userRepository = new UserRepository();
 
     public createUser = async (userData: UserData) => {
-        return await this.userRepository.createUser(userData)
-    }
-
-    public validateUser = async (userId: number) => {
-        return await this.userRepository.validateUser(userId)
-    }
-
-    public validateUserBody = (body: UserData) => {
-        const errors = [];
-
-        if (!body.email) {
-            errors.push('Name required');
+        try {
+            return await this.userRepository.createUser(userData);
+        } catch (error) {
+            console.error('Erro no serviço de usuários:', error);
+            throw new Error('Erro ao criar usuário.');
         }
-        if (!body.password) {
-            errors.push('Email password');
-        }
-        return errors
     }
 }
 
-export default UserService
+export default UserService;

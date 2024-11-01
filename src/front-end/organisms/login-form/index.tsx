@@ -5,7 +5,7 @@ import title from "@/public/assets/banner.png";
 import InputEmail from "@/src/front-end/molecules/input-email";
 import InputPassword from "@/src/front-end/molecules/input-password";
 import TextField from "@/src/front-end/atoms/text-field";
-import ButtonSigIn from "@/src/front-end/molecules/button-sig-in";
+import ButtonSigInLogin from "@/src/front-end/molecules/button-sig-in-login";
 
 type Props = {
     handlerEmailChange : any
@@ -27,7 +27,7 @@ export default function LoginForm ({handlerEmailChange, handlerPasswordChange} :
                                 <TextField label={"Esqueceu a senha?"}/>
                             </div>
                         </div>
-                    <ButtonSigIn/>
+                    <ButtonSigInLogin/>
                     </div>
                 </div>
         </Fragment>

@@ -3,7 +3,7 @@ import styles from "./button-sig-in.module.css"
 import TextField from "@/src/front-end/atoms/text-field";
 
 
-export default function ButtonSigIn () {
+export default function ButtonSigInLogin() {
     return (
         <Fragment>
             <div className={styles.containerButton}>

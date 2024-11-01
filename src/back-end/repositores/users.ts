@@ -1,48 +1,25 @@
-import pool from "../../../api/postgres/db";
+import pool from "../../../api/postgres";
 import {UserData} from "@/src/models/usersDTO";
 
 class UserRepository {
     public createUser = async (userData: UserData) => {
-
         try {
-            const query = {
-                text: `
-                INSERT INTO users(
-                    email
-                )
-                VALUES (
-                  $1
-                );
-                `,
-                values: [userData.email],
-            };
+            const query = `
+                INSERT INTO dba_usuarios (
+                    EMAIL_USUARIO
+                ) VALUES (?);
+            `;
+            const values = [
+                userData.email
+            ];
 
-            return await pool.query(query);
-
+            const result = await pool.query(query, values);
+            return result[0];
         } catch (error: any) {
-
-            return error.message
+            console.error('Erro ao inserir no MySQL:', error);
+            throw new Error(error.message);
         }
     }
-
-
-    public validateUser = async (userId: number) => {
-        try {
-            const query = {
-                text: `UPDATE users 
-                SET validated = true
-                WHERE id = $1;`,
-                values: [userId],
-            };
-
-            return await pool.query(query);
-
-        } catch (error: any) {
-
-            return error.message
-        }
-    }
-
 }
 
 export default UserRepository;

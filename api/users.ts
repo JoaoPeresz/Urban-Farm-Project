@@ -7,7 +7,7 @@ export const registerNewUser = async (
 ) => {
     try {
         const result: any = await api.post(
-            `/api/users`, {
+            `/api/register`, {
                 email: email,
                 password: password,
                 confirmPassword: confirmPassword,
@@ -29,17 +29,5 @@ export const isUserInDatabase = async (
     } catch (error: any) {
         console.log(error.response.data, 'error api-validate users');
         return error.response.data;
-    }
-}
-
-export const findUser = async (token: string) => {
-    try {
-        const result = await api.get(`/api/users`, {
-            headers: {Authorization: token}
-        })
-        return result.data.data;
-
-    } catch (e: any) {
-        return e.message
     }
 }

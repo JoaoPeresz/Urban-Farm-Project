@@ -1,33 +1,32 @@
-"use client"
-import {Fragment, useContext, useEffect, useState} from "react";
+"use client";
+import { Fragment, useContext, useEffect, useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import Register from "@/src/front-end/templates/register";
-import {isUserInDatabase, registerNewUser} from "@/api/users";
-import {useRouter} from "next/navigation";
-import {toast} from "react-toastify";
-import {UserContext} from "@/user-context";
+import { isUserInDatabase, registerNewUser } from "@/api/users";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import { UserContext } from "@/user-context";
 
 export default function Page() {
     const router = useRouter();
-    const {userData, updateUser} = useContext(UserContext);
+    const { userData, updateUser } = useContext(UserContext);
     const [isFinished, setIsFinished] = useState(false);
     const [formEmailValidator, setFormEmailValidator] = useState(false);
     const [formPasswordValidator, setFormPasswordValidator] = useState(false);
     const [formConfirmPasswordValidator, setFormConfirmPasswordValidator] = useState(false);
-    const [userEmail, setuserEmail] = useState<string>("");
-    const [password, setpassword] = useState<string>("");
-    const [passwordConfirm, setpasswordConfirm] = useState<string>("");
+    const [userEmail, setUserEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [passwordConfirm, setPasswordConfirm] = useState<string>("");
     const [isSamePassword, setIsSamePassword] = useState<boolean>(true);
     const [isConfirmPasswordDirty, setIsConfirmPasswordDirty] = useState<boolean>(false);
 
     const completeRegistration = async () => {
         setIsFinished(true);
-        if (validateUserEmail(formEmailValidator) || validatePassword(formPasswordValidator) || validatePasswordConfirm(formConfirmPasswordValidator) ) {
-
+        if (validateUserEmail(userEmail) && validatePassword(password) && validatePasswordConfirm(passwordConfirm)) {
             const result = await registerNewUser(
-                userData.email,
-                userData.password,
-                userData.confirmPassword,
+                userEmail,
+                password,
+                passwordConfirm
             );
             if (result && result.success === false) {
                 const errors = result.errors || [];
@@ -58,35 +57,33 @@ export default function Page() {
                     theme: "light",
                 });
                 setTimeout(async () => {
-                    await router.push('/')
-                }, 4000)
+                    await router.push('/');
+                }, 4000);
             }
         } else {
-            console.log('error')
+            console.log('error');
         }
-    }
+    };
+
     const handlerEmailChange = (newEmail: string) => {
-        setuserEmail(newEmail);
+        setUserEmail(newEmail);
     };
 
     const handlerPasswordChange = (userPassword: string) => {
-        setpassword(userPassword);
+        setPassword(userPassword);
     };
 
     const confirmingPassword = (userPassword: string) => {
-        setpasswordConfirm(userPassword);
+        setPasswordConfirm(userPassword);
         setIsConfirmPasswordDirty(true);
     };
 
     useEffect(() => {
         if (password.length > 0 && isConfirmPasswordDirty) {
-            if (passwordConfirm === password) {
-                setIsSamePassword(true);
-            } else {
-                setIsSamePassword(false);
-            }
+            setIsSamePassword(passwordConfirm === password);
         }
     }, [password, passwordConfirm, isConfirmPasswordDirty]);
+
     const validateForms = async () => {
         setIsFinished(true);
         const isUserEmailValid = validateUserEmail(userEmail);
@@ -97,10 +94,9 @@ export default function Page() {
         setFormPasswordValidator(isPasswordValid);
         setFormConfirmPasswordValidator(isConfirmPasswordValid);
 
-        if (!userEmail && !password && passwordConfirm) {
+        if (isUserEmailValid && isPasswordValid && isConfirmPasswordValid) {
             try {
-                const result = await
-                    isUserInDatabase(userData);
+                const result = await isUserInDatabase(userData);
                 if (result && result.success === false) {
                     const errors = [result.errors];
                     if (errors.length > 0) {
@@ -126,21 +122,22 @@ export default function Page() {
         }
     };
 
-    const validateUserEmail = (email: any) => {
-        return validateUserEmail(email);
-    }
+    const validateUserEmail = (email: string) => {
+        return email.includes('@') && email.includes('.');
+    };
 
-    const validatePassword = (password: any) => {
-        return validatePassword(password)
-    }
+    const validatePassword = (password: string) => {
+        return password.length > 0;
+    };
 
-    const validatePasswordConfirm = (passwordConfirm: any) => {
-        return validatePasswordConfirm(passwordConfirm)
-    }
+    const validatePasswordConfirm = (passwordConfirm: string) => {
+        return passwordConfirm === password;
+    };
 
     return (
         <Fragment>
             <Register
+                completeRegistration={completeRegistration}
                 isFinished={isFinished}
                 userData={userData}
                 formEmailValidator={formEmailValidator}
@@ -153,5 +150,5 @@ export default function Page() {
                 handlerPasswordChange={handlerPasswordChange}
             />
         </Fragment>
-    )
+    );
 }

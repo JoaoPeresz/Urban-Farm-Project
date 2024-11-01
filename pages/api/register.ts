@@ -1,21 +1,19 @@
-import { NextApiRequest, NextApiResponse  } from "next";
+import { NextApiRequest, NextApiResponse } from 'next';
+import { Secret } from 'jsonwebtoken';
+import UserController from "@/src/back-end/controller/users";
 
-const saveUser = async (email: string, password: string) => {
-    return { success: true };
-}
+const KEY: Secret | undefined = process.env.NEXT_PUBLIC_JWT_KEY;
 
-export default  async function handler (req: NextApiRequest, res: NextApiResponse) {
-    if (req.method === "POST") {
-        const { email, password } = req.body;
+export default async (request: NextApiRequest, response: NextApiResponse) => {
+    const { method } = request;
+    const userController = new UserController();
 
-        try {
-            const result = await saveUser(email, password);
-            res.status(200).json(result);
-        }  catch (error) {
-            res.status(500).json({ error: 'Erro ao salvar o usuário' });
-        }
-    } else {
-        res.status(405).json({ message: 'Método não permitido' });
+    switch (method) {
+        case 'POST':
+            await userController.createUser(request, response);
+            break;
+        default:
+            response.setHeader('Allow', ['POST']);
+            response.status(405).end(`Method ${method} Not Allowed`);
     }
-}
-
+};

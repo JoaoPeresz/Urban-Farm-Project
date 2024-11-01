@@ -11,7 +11,7 @@ type Props = {
     registerSupplier: () => void;
 }
 
-export default function Home ({registerSupplier} : Props) {
+export default function HomePage ({registerSupplier} : Props) {
     return (
         <Fragment>
             <div className={styles.containerHome}>

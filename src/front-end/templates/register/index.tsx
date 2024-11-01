@@ -14,7 +14,8 @@ type Props = {
     formEmailValidator: boolean,
     formPasswordValidator: boolean,
     formConfirmPasswordValidator: boolean,
-    userData: any
+    userData: any,
+    completeRegistration?: () => Promise<void>
 }
 
 export default function Register({
@@ -27,7 +28,8 @@ export default function Register({
                                      formEmailValidator,
                                      formPasswordValidator,
                                      formConfirmPasswordValidator,
-                                     userData
+                                     userData,
+                                     completeRegistration
                                  }: Props) {
 
     const router = useRouter();
@@ -41,6 +43,7 @@ export default function Register({
             <div className={styles.containerRegister}>
                 <HeaderRegister goBackPage={goBackPage}/>
                 <RegisterForm
+                    completeRegistration={completeRegistration}
                     handlerEmailChange={handlerEmailChange}
                     handlerPasswordChange={handlerPasswordChange}
                     confirmingPassword={confirmingPassword}
