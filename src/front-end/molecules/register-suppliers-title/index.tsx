@@ -6,8 +6,8 @@ export default function RegisterSuppliersTitle () {
     return (
         <Fragment>
             <div className={styles.containerTitle}>
-                <PersonAddAlt1Icon/>
-                <h1 className={styles.titile}>Cadstro de Fornecedores</h1>
+                <PersonAddAlt1Icon className={styles.iconUser}/>
+                <h1 className={styles.titile}>Cadastro de Fornecedores</h1>
             </div>
         </Fragment>
     )

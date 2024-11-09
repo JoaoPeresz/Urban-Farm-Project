@@ -1,0 +1,31 @@
+.containerInputs {
+    width: 80%;
+    height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.adress {
+    width: 80%;
+    align-items: flex-start;
+    display: flex;
+    font-size: 2vw;
+}
+
+.containerAdress {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.containerAdress > * {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 200px;
+}

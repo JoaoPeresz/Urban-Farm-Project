@@ -1,7 +1,8 @@
 import {Fragment} from "react";
 import styles from "./header-home.module.css"
 import LogoAgroCidade from "@/src/front-end/atoms/logo-agro-cidade";
-import RegisterButton from "@/src/front-end/molecules/register-button";
+import RegisterButton from "../../molecules/create-account-button";
+import CreateAccountButton from "../../molecules/create-account-button";
 
 type Props = {
     createAccount : () => void
@@ -12,7 +13,7 @@ export default function HeaderLogin ({createAccount} : Props) {
         <Fragment>
             <div className={styles.containerHeaderHome}>
                 <LogoAgroCidade/>
-                <RegisterButton createAccount={createAccount}/>
+                <CreateAccountButton createAccount={createAccount}/>
             </div>
         </Fragment>
     )
