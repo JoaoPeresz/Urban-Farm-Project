@@ -15,7 +15,7 @@ export default async (request: NextApiRequest, response: NextApiResponse) => {
         await userController.createUser(request, response)
     }
 
-    // if (method === 'GET') {
-    //     await userController.find(request, response)
-    // }
+    if (method === 'GET') {
+        await userController.findUser(request, response)
+    }
 };
