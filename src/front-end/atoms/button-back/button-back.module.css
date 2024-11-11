@@ -1,7 +1,5 @@
 .containerButtonBack {
     background-color: transparent;
-    position: absolute;
-    left: 40px;
     cursor: pointer;
     padding: 5px;
     border-radius: 50%;

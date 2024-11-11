@@ -8,8 +8,8 @@ class UserService {
         return await this.userRepository.createUser(userData)
     }
 
-    public validateUser = async (userId: number) => {
-        return await this.userRepository.validateUser(userId)
+    public findUser = async (userId: number) => {
+        return await this.userRepository.findUser(userId)
     }
 
     public validateUserBody = (body: UserData) => {

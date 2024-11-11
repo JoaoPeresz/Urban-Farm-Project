@@ -1,5 +1,5 @@
-import pool from "../../../api/postgres/db";
 import {UserData} from "@/src/models/usersDTO";
+import pool from "@/api/postgres";
 
 class UserRepository {
     public createUser = async (userData: UserData) => {
@@ -26,20 +26,17 @@ class UserRepository {
     }
 
 
-    public validateUser = async (userId: number) => {
+    public findUser = async (userId: number) => {
         try {
-            const query = {
-                text: `UPDATE users 
+            const query = `
+                UPDATE users 
                 SET validated = true
-                WHERE id = $1;`,
-                values: [userId],
-            };
-
-            return await pool.query(query);
-
+                WHERE id = ?;
+            `;
+            const [result] = await pool.query(query, [userId]);
+            return result;
         } catch (error: any) {
-
-            return error.message
+            return error.message;
         }
     }
 
