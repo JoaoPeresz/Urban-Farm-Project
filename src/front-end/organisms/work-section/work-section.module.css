@@ -1,13 +1,13 @@
 .containerWorkSection {
     width: 100vw;
     max-width: 100vw;
-    height: 800px;
+    height: auto; /* Altera para auto para expandir conforme o conteúdo */
+    padding: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden; /* Remove o scroll da seção */
     color: black;
     background-color: #263C28;
     background-image: url("../../../../public/assets/grass.png");
@@ -29,14 +29,12 @@
 }
 
 .containerBox {
-    width: 70%;
-    height: 400px;
+    width: 1920px;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
     align-items: center;
-    flex-wrap: wrap;
-
+    flex-wrap: wrap; /* Permite que os elementos quebrem de linha */
 }
-

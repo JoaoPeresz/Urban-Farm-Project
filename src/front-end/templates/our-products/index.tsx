@@ -12,9 +12,9 @@ export default function OurProducts() {
                 <HeaderHome statusNavigation={75}/>
                 <div className={styles.containerBox}>
                     <BannerProducts/>
-                    <ProductsCards/>
+                    {/*<ProductsCards/>*/}
                 </div>
-                    <FooterDefault/>
+                    {/*<FooterDefault/>*/}
             </div>
         </Fragment>
     )

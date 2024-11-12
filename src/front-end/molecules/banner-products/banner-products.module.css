@@ -1,23 +1,27 @@
 .containerBanner {
-    width: 100%;
+    width: 90%;
+    height: 200px;
+    top: 150px;
+    display: flex;
+    position: absolute;
     background-image: url("../../../../public/assets/banner-products.png");
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
-    display: flex;
     align-items: center;
-    position: relative;
+    border-radius: 20px;
 }
 
+
+
 .title {
-    font-size: 64px;
+    font-size: 2rem;
     font-weight: 800;
-    margin-left: 150px;
+    margin-left: 250px;
     position: absolute;
 }
 
 .greenCircle {
     position: absolute;
-    left: 350px;
-    bottom: 75px;
+    left: 150px;
+    top: -35px;
 }

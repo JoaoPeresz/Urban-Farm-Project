@@ -13,7 +13,7 @@ export default function ProjectsCards ({imageCard, title, description} : Props) 
     return (
         <Fragment>
             <div className={styles.containerProjects}>
-                <Image src={imageCard} width={300}  height={300} alt={"image card"}/>
+                <Image className={styles.image} src={imageCard} width={300}  height={300} alt={"image card"}/>
                 <div className={styles.containerTitle}>
                     <TextField label={title}/>
                 </div>

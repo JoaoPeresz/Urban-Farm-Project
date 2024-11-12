@@ -18,6 +18,12 @@
     -moz-box-shadow: 0 0 16px 1px rgba(247,195,95,0.67);
 }
 
+.image {
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 .containerTitle {
     font-size: 15px;
     position: absolute;
